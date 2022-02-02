@@ -9,7 +9,7 @@ let visibilityText = document.querySelector('.visibility');
 /* default latitude and longitude. Here lat and long is for "London" */
 let lat = 51.505;
 let long = -0.09;
-let zoomLevel = 8;
+let zoomLevel = 1;
 
 // set iss.png image as Marker
 const icon = L.icon({
@@ -31,7 +31,7 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
   id: 'mapbox/streets-v11',
   tileSize: 512,
   zoomOffset: -1,
-  accessToken: 'your.mapbox.access.token'
+  accessToken: 'pk.eyJ1IjoiaGVucmV0aCIsImEiOiJja3o0eXgxcDAwbGlkMnZvZjl6cW03YWUxIn0.LPBx9sZ1mf1LUDpFWb9kYg'
 }).addTo(map);
 
 // adding the Marker to map
